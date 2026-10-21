@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/kettle/iafdragons/mixin/EntityHippogryphMixin": {
+      "registerGoals": "Lcom/github/alexthe666/iceandfire/entity/EntityHippogryph;m_8099_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/kettle/iafdragons/mixin/EntityHippogryphMixin": {
+        "registerGoals": "Lcom/github/alexthe666/iceandfire/entity/EntityHippogryph;m_8099_()V"
+      }
+    }
+  }
+}

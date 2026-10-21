@@ -1,0 +1,34 @@
+modLoader = "javafml" #mandatory
+loaderVersion = "[37.0,)" #mandatory
+issueTrackerURL = "https://github.com/Alex-the-666/ice-and-fire/issues" #optional
+license = "GNU LESSER GENERAL PUBLIC LICENSE"
+[[mods]] #mandatory
+modId = "iceandfire" #mandatory
+version = "${file.jarVersion}" #mandatory
+displayName = "Ice and Fire: Dragon Only" #mandatory
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons" #optional
+authors = "Alexthe666, TheBv, Kettle5000" #optional
+description = '''A standalone, optimized fork of Ice and Fire focusing exclusively on dragons, dragon gear, integrated dragon AI fixes, and Jade support.'''
+[[dependencies.iceandfire]] #optional
+# the modid of the dependency
+modId = "citadel" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory = true #mandatory
+# The version range of the dependency
+versionRange = "[2.4.1,)" #mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering = "AFTER"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side = "BOTH"
+[[dependencies.iceandfire]]
+    modId = "forge"
+    mandatory = true
+    versionRange="[40.1.37,)"
+    side="BOTH"
+
+[[mods]]
+modId = "iaf_dragons"
+version = "1.0.7a"
+displayName = "Ice and Fire: Dragon Fix"
+authors = "Kettle5000"
+description = '''Integrated dragon AI, flight, and combat fixes.'''

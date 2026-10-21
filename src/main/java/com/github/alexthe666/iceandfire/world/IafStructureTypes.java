@@ -1,0 +1,18 @@
+package com.github.alexthe666.iceandfire.world;
+
+import com.github.alexthe666.iceandfire.IceAndFire;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.levelgen.structure.Structure;
+import net.minecraft.world.level.levelgen.structure.StructureType;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
+
+public class IafStructureTypes {
+    public static final DeferredRegister<StructureType<?>> STRUCTURE_TYPES = DeferredRegister.create(Registries.STRUCTURE_TYPE, IceAndFire.MODID);
+
+    private static <P extends Structure> RegistryObject<StructureType<P>> registerType(String name, Supplier<StructureType<P>> factory) {
+        return STRUCTURE_TYPES.register(name, factory);
+    }
+}

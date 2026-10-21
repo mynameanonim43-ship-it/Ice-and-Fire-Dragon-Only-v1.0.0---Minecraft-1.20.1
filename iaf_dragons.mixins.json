@@ -1,0 +1,29 @@
+{
+	"required": true,
+	"package": "com.kettle.iafdragons.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"refmap": "iaf_dragons.mixins.refmap.json",
+	"mixins": [
+		"DragonAIReturnToRoostMixin",
+		"MixinDragonFlightManager",
+		"MixinDragonFlightManager2",
+		"MixinDragonLogic",
+		"EntityDragonBaseMixin",
+		"DragonUtilsMixin",
+		"PathingStuckHandlerMixin",
+		"IafDragonDestructionManagerMixin",
+		"EntityFireDragonMixin",
+		"EntityIceDragonMixin",
+		"EntityLightningDragonMixin",
+		"TileEntityJarMixin",
+		"DragonTabulaModelAnimatorFixMixin",
+		"SeaSerpentTabulaModelAnimatorFixMixin",
+		"EntityHippogryphMixin",
+		"FrozenDataMixin"
+	],
+	"client": [
+		"BipedModelFixMixin",
+    	"NormalModelFixMixin"
+	],
+	"minVersion": "0.8"
+}
